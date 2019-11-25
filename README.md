@@ -1,3 +1,15 @@
+# Added features
+
+The following features were added to this gread annotation tool:
+
+* Authentication for whole app 
+
+  User: labeler
+  
+  PW: set environment variable `LABEL_PASSWORD`
+  
+* Removed `floor` for numbers in json export 
+
 # Image Labeling Tool
 
 This web app allows you to label images, draw bounding boxes, shapes, collect information in forms with dropdowns, checkboxes and inputs.

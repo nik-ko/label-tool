@@ -18,6 +18,8 @@ ENV UPLOADS_PATH=/uploads
 
 ENV PORT=3000
 ENV NODE_ENV=production
+ENV ADMIN_PASSWORD=super_secure_admin_pw
+ENV LABEL_PASSWORD=super_secure_app_pw
 EXPOSE 3000
 
 CMD ["node", "server/src/index.js"]

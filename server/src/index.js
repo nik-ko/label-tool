@@ -19,6 +19,14 @@ const UPLOADS_PATH =
 
 const app = express();
 
+
+const basicAuth = require('express-basic-auth');
+app.use(basicAuth({
+  users: { labeler : process.env.LABEL_PASSWORD },
+  challenge: true // <--- needed to actually show the login dialog!
+}));
+
+
 setup(app);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({ limit: '10mb' }));

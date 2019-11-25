@@ -27,9 +27,9 @@ exports.exportProject = projectId => {
             return [[x1, y1], [x1, y2], [x2, y2], [x2, y1]];
           }
           function sanitize([x, y]) {
-            x = Math.floor(Math.max(x, 0));
+            x = Math.max(x, 0); // Math.floor
             x = Math.min(x, labelData.width);
-            y = Math.floor(Math.max(y, 0));
+            y = Math.max(y, 0); // Math.floor(
             y = Math.min(y, labelData.height);
             return [x, y];
           }
