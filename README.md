@@ -1,6 +1,6 @@
 # Added features
 
-The following features were added to this gread annotation tool:
+The following features were added to this great labeling tool:
 
 * Authentication for whole app 
 
